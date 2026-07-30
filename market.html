@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MarsX Market Dashboard — MarsX Colony</title>
+  <meta name="description" content="MarsX Colony 核心数据页面：市值、持有人、分红池和成交量。" />
+  <link rel="icon" href="assets/marsx-logo.png" />
+  <link rel="stylesheet" href="assets/site.css" />
+</head>
+<body class="subpage">
+  <header class="wrap top">
+    <a class="brand" href="index.html"><span class="logo"><img src="assets/marsx-logo.png" alt="MarsX Colony logo" /></span><span>MarsX Colony</span></a>
+    <nav class="nav"><a class="" href="index.html"><span class="zh">首页</span><span class="en">Home</span></a><a class="active" href="market.html"><span class="zh">核心数据</span><span class="en">Market</span></a><a class="" href="ecosystem.html"><span class="zh">生态系统</span><span class="en">Ecosystem</span></a><a class="" href="passport.html">Mars Passport</a><a class="" href="tokenomics.html"><span class="zh">经济模型</span><span class="en">Model</span></a><a class="" href="roadmap.html"><span class="zh">路线图</span><span class="en">Roadmap</span></a><a class="" href="whitepaper.html"><span class="zh">白皮书</span><span class="en">Whitepaper</span></a></nav>
+    <div class="actions"><div class="lang"><button id="zhBtn" class="active" onclick="setLang('zh')">中</button><button id="enBtn" onclick="setLang('en')">EN</button></div><button class="btn" type="button" onclick="connectWallet()"><span class="zh">连接钱包</span><span class="en">Connect</span></button></div>
+  </header>
+<main><section class="pageHero"><div class="wrap"><div class="pageKicker"><span class="zh">核心数据</span><span class="en">Market Data</span></div><h1><span class="zh">MarsX 核心市场看板</span><span class="en">MarsX Market Dashboard</span></h1><p class="pageLead zh">集中呈现代币市值、链上持有人、分红池、成交量和殖民地数量。后续接入合约地址、区块浏览器 API 或后端接口后，这些数据可以实时更新。</p><p class="pageLead en">A focused dashboard for market cap, on-chain holders, reward pool, volume and colony count. With contract addresses, explorer APIs or backend endpoints, these metrics can be updated live.</p></div></section><section class="wrap section"><div class="statMatrix"><div class="statBox"><span>SPCXB <span class="zh">总市值</span><span class="en">Market Cap</span></span><b>$45,678,932</b></div><div class="statBox"><span><span class="zh">链上持有人</span><span class="en">On-chain Holders</span></span><b>8,732</b></div><div class="statBox"><span><span class="zh">分红池余额</span><span class="en">Reward Pool</span></span><b>$2,458,759</b></div><div class="statBox"><span>24H <span class="zh">成交量</span><span class="en">Volume</span></span><b>$1,245,678</b></div></div></section><section class="wrap section"><div class="pageGrid two"><div class="contentCard"><h2><span class="zh">数据口径</span><span class="en">Data Methodology</span></h2><ul class="zh"><li><strong>市值：</strong>基于 SPCXB 价格与流通量计算。</li><li><strong>持有人：</strong>基于 BEP-20 持币地址或索引器统计。</li><li><strong>分红池：</strong>基于 Vault / 分红地址余额读取。</li></ul><ul class="en"><li><strong>Market cap:</strong> calculated from SPCXB price and circulating supply.</li><li><strong>Holders:</strong> based on BEP-20 holder count or indexer data.</li><li><strong>Reward pool:</strong> read from Vault or reward addresses.</li></ul></div><div class="contentCard"><h2><span class="zh">实时更新需要</span><span class="en">For Live Updates</span></h2><ul class="zh"><li>代币合约地址</li><li>Vault / 分红池地址</li><li>SPCXB 价格来源或 API</li><li>持有人统计来源：BscScan API、索引器或后端接口</li></ul><ul class="en"><li>Token contract address</li><li>Vault / reward pool address</li><li>SPCXB price source or API</li><li>Holder source: BscScan API, indexer or backend API</li></ul></div></div><div class="backLine"><a class="btn" href="index.html"><span class="zh">返回首页</span><span class="en">Back Home</span></a></div></section></main>
+  <footer class="wrap footer"><a class="brand" href="index.html"><span class="logo"><img src="assets/marsx-logo.png" alt="MarsX Colony logo" /></span><span>MarsX Colony</span></a><div class="social">Discord · Telegram · X · Docs</div><div>© 2026 MarsX Colony</div></footer>
+  <script src="assets/site.js"></script>
+</body>
+</html>

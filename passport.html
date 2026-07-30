@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mars Passport — MarsX Colony</title>
+  <meta name="description" content="Mars Passport：MarsX Colony 钱包身份、等级和余额页面。" />
+  <link rel="icon" href="assets/marsx-logo.png" />
+  <link rel="stylesheet" href="assets/site.css" />
+</head>
+<body class="subpage">
+  <header class="wrap top">
+    <a class="brand" href="index.html"><span class="logo"><img src="assets/marsx-logo.png" alt="MarsX Colony logo" /></span><span>MarsX Colony</span></a>
+    <nav class="nav"><a class="" href="index.html"><span class="zh">首页</span><span class="en">Home</span></a><a class="" href="market.html"><span class="zh">核心数据</span><span class="en">Market</span></a><a class="" href="ecosystem.html"><span class="zh">生态系统</span><span class="en">Ecosystem</span></a><a class="active" href="passport.html">Mars Passport</a><a class="" href="tokenomics.html"><span class="zh">经济模型</span><span class="en">Model</span></a><a class="" href="roadmap.html"><span class="zh">路线图</span><span class="en">Roadmap</span></a><a class="" href="whitepaper.html"><span class="zh">白皮书</span><span class="en">Whitepaper</span></a></nav>
+    <div class="actions"><div class="lang"><button id="zhBtn" class="active" onclick="setLang('zh')">中</button><button id="enBtn" onclick="setLang('en')">EN</button></div><button class="btn" type="button" onclick="connectWallet()"><span class="zh">连接钱包</span><span class="en">Connect</span></button></div>
+  </header>
+<main><section class="pageHero"><div class="wrap"><div class="pageKicker">Mars Passport</div><h1><span class="zh">火星殖民身份系统</span><span class="en">Mars Colony Identity System</span></h1><p class="pageLead zh">Mars Passport 是 MarsX Colony 的身份层，用于表达用户的钱包身份、持有状态、任务成就、徽章和殖民等级。连接 BSC 钱包后可显示地址，填入代币合约后可读取余额。</p><p class="pageLead en">Mars Passport is the identity layer for wallet status, holdings, missions, badges and colony rank. After connecting a BSC wallet, users can view their address; token balance can be read once the token contract is configured.</p></div></section><section class="wrap section"><div class="marketPanel"><div class="panelTop"><h2>Mars Passport</h2><div class="liveBadge"><span class="pulse"></span>BSC</div></div><div class="walletBox" id="passport"><div class="connectLine"><div><strong>Wallet Identity</strong><br/><span id="walletStatus"><span class="zh">连接 BSC 钱包后显示地址与代币余额</span><span class="en">Connect BSC wallet to show address and token balance</span></span></div><button class="btn primary" type="button" onclick="connectWallet()"><span class="zh">连接钱包</span><span class="en">Connect</span></button></div><div class="walletNote" id="tokenBalance">Token Balance: --</div></div></div></section><section class="wrap section"><div class="rankTable"><div class="rankRow"><b>Visitor</b><span class="zh">初始访问者，了解项目并连接钱包。</span><span class="en">Initial visitor who explores the project and connects a wallet.</span></div><div class="rankRow"><b>Engineer</b><span class="zh">完成基础任务并开始参与生态建设。</span><span class="en">Completes basic missions and begins ecosystem participation.</span></div><div class="rankRow"><b>Pilot</b><span class="zh">拥有稳定持有记录和更高任务完成度。</span><span class="en">Maintains stable holding history and higher mission completion.</span></div><div class="rankRow"><b>Commander</b><span class="zh">在社区贡献、任务和生态传播中拥有更强影响力。</span><span class="en">Shows stronger contribution across community, missions and promotion.</span></div><div class="rankRow"><b>Founder</b><span class="zh">早期深度参与者，具备更高身份权重。</span><span class="en">Early deep participant with higher identity weight.</span></div><div class="rankRow"><b>Martian Governor</b><span class="zh">最高殖民身份，代表长期贡献和深度生态参与。</span><span class="en">Highest colony identity for long-term contribution and deep participation.</span></div></div><div class="backLine"><a class="btn" href="index.html"><span class="zh">返回首页</span><span class="en">Back Home</span></a></div></section></main>
+  <footer class="wrap footer"><a class="brand" href="index.html"><span class="logo"><img src="assets/marsx-logo.png" alt="MarsX Colony logo" /></span><span>MarsX Colony</span></a><div class="social">Discord · Telegram · X · Docs</div><div>© 2026 MarsX Colony</div></footer>
+  <script src="assets/site.js"></script>
+</body>
+</html>
