@@ -3,19 +3,125 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>MarsX Market Dashboard — MarsX Colony</title>
-  <meta name="description" content="MarsX Colony 核心数据页面：市值、持有人、分红池和成交量。" />
+  <title>进入火星 — MarsX Colony</title>
+  <meta name="description" content="MarsX Colony 火星游戏入口：输入邀请码后进入殖民界面。" />
   <link rel="icon" href="assets/marsx-logo.png" />
   <link rel="stylesheet" href="assets/site.css" />
 </head>
-<body class="subpage">
+<body class="subpage marsGamePage">
   <header class="wrap top">
     <a class="brand" href="index.html"><span class="logo"><img src="assets/marsx-logo.png" alt="MarsX Colony logo" /></span><span>MarsX Colony</span></a>
-    <nav class="nav"><a class="" href="index.html"><span class="zh">首页</span><span class="en">Home</span></a><a class="active" href="market.html"><span class="zh">核心数据</span><span class="en">Market</span></a><a class="" href="ecosystem.html"><span class="zh">生态系统</span><span class="en">Ecosystem</span></a><a class="" href="passport.html">Mars Passport</a><a class="" href="tokenomics.html"><span class="zh">经济模型</span><span class="en">Model</span></a><a class="" href="roadmap.html"><span class="zh">路线图</span><span class="en">Roadmap</span></a><a class="" href="whitepaper.html"><span class="zh">白皮书</span><span class="en">Whitepaper</span></a></nav>
+    <nav class="nav"><a class="" href="index.html"><span class="zh">首页</span><span class="en">Home</span></a><a class="active" href="market.html"><span class="zh">进入火星</span><span class="en">Enter Mars</span></a><a class="" href="ecosystem.html"><span class="zh">生态系统</span><span class="en">Ecosystem</span></a><a class="" href="passport.html">Mars Passport</a><a class="" href="tokenomics.html"><span class="zh">经济模型</span><span class="en">Model</span></a><a class="" href="roadmap.html"><span class="zh">路线图</span><span class="en">Roadmap</span></a><a class="" href="whitepaper.html"><span class="zh">白皮书</span><span class="en">Whitepaper</span></a></nav>
     <div class="actions"><div class="lang"><button id="zhBtn" class="active" onclick="setLang('zh')">中</button><button id="enBtn" onclick="setLang('en')">EN</button></div><button class="btn" type="button" onclick="connectWallet()"><span class="zh">连接钱包</span><span class="en">Connect</span></button></div>
   </header>
-<main><section class="pageHero"><div class="wrap"><div class="pageKicker"><span class="zh">核心数据</span><span class="en">Market Data</span></div><h1><span class="zh">MarsX 核心市场看板</span><span class="en">MarsX Market Dashboard</span></h1><p class="pageLead zh">当前展示的 SPCXB 数据已切换为合约 0xbe9d156892e55e7154bcd3cb0fea677f9d3103e1 的市场快照：市值来自交易对价格与流通量，持有人来自 BscScan 最新持有人统计。</p><p class="pageLead en">The SPCXB data shown here now uses the market snapshot for contract 0xbe9d156892e55e7154bcd3cb0fea677f9d3103e1: market cap comes from pair pricing and circulating supply, while holders come from the latest BscScan holder count.</p></div></section><section class="wrap section"><div class="statMatrix"><div class="statBox"><span>SPCXB <span class="zh">总市值</span><span class="en">Market Cap</span></span><b>$86,914,195</b></div><div class="statBox"><span><span class="zh">链上持有人</span><span class="en">On-chain Holders</span></span><b>74,332</b></div><div class="statBox"><span><span class="zh">合约地址</span><span class="en">Contract</span></span><b style="font-size:14px;line-height:1.2">0xbe9d156892e55e7154bcd3cb0fea677f9d3103e1</b></div><div class="statBox"><span>24H <span class="zh">成交量</span><span class="en">Volume</span></span><b>$71,875,262</b></div></div></section><section class="wrap section"><div class="pageGrid two"><div class="contentCard"><h2><span class="zh">数据口径</span><span class="en">Data Methodology</span></h2><ul class="zh"><li><strong>市值：</strong>基于 DexScreener 交易对快照的市场市值。</li><li><strong>持有人：</strong>基于 BscScan token 页面最新持有人统计。</li><li><strong>合约：</strong>0xbe9d156892e55e7154bcd3cb0fea677f9d3103e1</li></ul><ul class="en"><li><strong>Market cap:</strong> based on DexScreener pair snapshot market cap.</li><li><strong>Holders:</strong> based on the latest BscScan token holder count.</li><li><strong>Contract:</strong> 0xbe9d156892e55e7154bcd3cb0fea677f9d3103e1</li></ul></div><div class="contentCard"><h2><span class="zh">实时更新需要</span><span class="en">For Live Updates</span></h2><ul class="zh"><li>DexScreener / DEX 价格快照</li><li>BscScan 持有人统计页面或 API</li><li>Vault / 分红池地址</li><li>后端定时刷新接口</li></ul><ul class="en"><li>DexScreener / DEX price snapshot</li><li>BscScan holder stats page or API</li><li>Vault / reward pool address</li><li>Backend refresh endpoint</li></ul></div></div><div class="backLine"><a class="btn" href="index.html"><span class="zh">返回首页</span><span class="en">Back Home</span></a></div></section></main>
+
+  <main>
+    <section class="pageHero marsHero">
+      <div class="wrap">
+        <div class="pageKicker"><span class="zh">游戏入口</span><span class="en">Game Entry</span></div>
+        <h1><span class="zh">进入火星</span><span class="en">Enter Mars</span></h1>
+        <p class="pageLead zh">输入邀请码后，解锁 MarsX 火星殖民游戏界面。</p>
+        <p class="pageLead en">Enter the invite code to unlock the MarsX colonization game interface.</p>
+      </div>
+    </section>
+
+    <section class="wrap section">
+      <div class="gameShell">
+        <div class="gateCard" id="inviteGate">
+          <div class="gateBadge"><span class="pulse"></span><span class="zh">邀请码闸门</span><span class="en">Invite Gate</span></div>
+          <h2><span class="zh">请输入邀请码</span><span class="en">Enter Invite Code</span></h2>
+          <p class="zh">只有通过邀请码验证，才能进入火星殖民游戏界面。</p>
+          <p class="en">Only invited users can access the Mars colonization game interface.</p>
+          <form id="inviteForm" class="inviteForm">
+            <input id="inviteCode" type="text" autocomplete="off" spellcheck="false" placeholder="邀请码 / Invite Code" />
+            <button class="btn primary" type="submit"><span class="zh">进入火星</span><span class="en">Enter Mars</span></button>
+          </form>
+          <div class="gateHint" id="inviteHint"><span class="zh">提示：请向官方获取邀请码。</span><span class="en">Hint: get the invite code from the official team.</span></div>
+        </div>
+
+        <div class="gameBoard hidden" id="marsGame">
+          <div class="gameTop">
+            <div>
+              <div class="gameKicker"><span class="zh">火星殖民界面</span><span class="en">Mars Colonization Interface</span></div>
+              <h2><span class="zh">Mars Colony · 游戏面板</span><span class="en">Mars Colony · Game Panel</span></h2>
+            </div>
+            <div class="gameStatus"><span class="pulse"></span><span class="zh">已解锁</span><span class="en">Unlocked</span></div>
+          </div>
+
+          <div class="gameGrid">
+            <div class="gameCard big">
+              <h3><span class="zh">殖民进度</span><span class="en">Colony Progress</span></h3>
+              <div class="progressRing">
+                <div class="progressCore">
+                  <strong>07%</strong>
+                  <span class="zh">火星开发</span><span class="en">Mars Build</span>
+                </div>
+              </div>
+              <p class="zh">铸造 Mars Colony，升级身份等级，提升 SPCXB 分红权重。</p>
+              <p class="en">Mint your Mars Colony, upgrade rank, and increase SPCXB dividend weight.</p>
+            </div>
+
+            <div class="gameCard">
+              <h3><span class="zh">身份等级</span><span class="en">Identity Rank</span></h3>
+              <div class="metricValue">LV.01</div>
+              <p class="zh">新入殖民者</p>
+              <p class="en">New colonist</p>
+            </div>
+
+            <div class="gameCard">
+              <h3><span class="zh">分红权重</span><span class="en">Dividend Weight</span></h3>
+              <div class="metricValue">1.00x</div>
+              <p class="zh">等待提升</p>
+              <p class="en">Ready to upgrade</p>
+            </div>
+
+            <div class="gameCard">
+              <h3><span class="zh">今日任务</span><span class="en">Daily Mission</span></h3>
+              <ul class="missionList">
+                <li><span class="dot"></span><span class="zh">连接钱包</span><span class="en">Connect wallet</span></li>
+                <li><span class="dot"></span><span class="zh">铸造 Colony</span><span class="en">Mint Colony</span></li>
+                <li><span class="dot"></span><span class="zh">升级火星身份</span><span class="en">Upgrade rank</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
   <footer class="wrap footer"><a class="brand" href="index.html"><span class="logo"><img src="assets/marsx-logo.png" alt="MarsX Colony logo" /></span><span>MarsX Colony</span></a><div class="social">Discord · Telegram · X · Docs</div><div>© 2026 MarsX Colony</div></footer>
+
   <script src="assets/site.js"></script>
+  <script>
+    const INVITE_CODE = 'MARSX2026';
+    const gate = document.getElementById('inviteGate');
+    const game = document.getElementById('marsGame');
+    const form = document.getElementById('inviteForm');
+    const input = document.getElementById('inviteCode');
+    const hint = document.getElementById('inviteHint');
+
+    function openMarsGame() {
+      gate.classList.add('hidden');
+      game.classList.remove('hidden');
+      sessionStorage.setItem('marsx-invite', '1');
+    }
+
+    if (sessionStorage.getItem('marsx-invite') === '1') {
+      openMarsGame();
+    }
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const value = (input.value || '').trim().toUpperCase();
+      if (value === INVITE_CODE) {
+        hint.innerHTML = '<span class="zh">验证通过，正在进入火星...</span><span class="en">Verified, entering Mars...</span>';
+        setTimeout(openMarsGame, 250);
+      } else {
+        hint.innerHTML = '<span class="zh">邀请码错误，请重新输入。</span><span class="en">Invalid invite code, please try again.</span>';
+        input.focus();
+        input.select();
+      }
+    });
+  </script>
 </body>
 </html>
